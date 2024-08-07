@@ -1,4 +1,4 @@
-import tkinter as tk
+
 
 from pysnmp.hlapi import *
 import time

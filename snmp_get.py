@@ -3,14 +3,7 @@ import tkinter as tk
 from pysnmp.hlapi import *
 import time
 def snmp_get(ip, oid, n=0):
-    #设备没有配snmp的认证 这里就不需要
-    # userData = UsmUserData(  # SNMP用户信息
-    #     'admin',#snmp用户名
-    #     '123',#认证密码
-    #     '123',#加密密码
-    #     authProtocol=usmHMACSHAAuthProtocol,#配置认证算法
-    #     privProtocol=usmAesCfb128Protocol)#配置加密算法
-    # 实现snmpget
+    
     g = getCmd(SnmpEngine(),  # 创建SNMP引擎
                CommunityData('public'),  # 团体属性
                # userData,交换机没有配认证，这里就不需要
